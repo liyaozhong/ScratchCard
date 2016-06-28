@@ -15,6 +15,7 @@
 		C0EC62FB1D225BD000686DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EC62F91D225BD000686DC9 /* LaunchScreen.storyboard */; };
 		C0EC63041D225BFE00686DC9 /* scratch_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EC63021D225BFE00686DC9 /* scratch_bg@3x.png */; };
 		C0EC63051D225BFE00686DC9 /* scratch_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EC63031D225BFE00686DC9 /* scratch_bg@2x.png */; };
+		C0EC63081D225C1C00686DC9 /* ScratchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC63071D225C1C00686DC9 /* ScratchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		C0EC62FC1D225BD000686DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0EC63021D225BFE00686DC9 /* scratch_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scratch_bg@3x.png"; sourceTree = "<group>"; };
 		C0EC63031D225BFE00686DC9 /* scratch_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scratch_bg@2x.png"; sourceTree = "<group>"; };
+		C0EC63061D225C1C00686DC9 /* ScratchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScratchView.h; sourceTree = "<group>"; };
+		C0EC63071D225C1C00686DC9 /* ScratchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScratchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				C0EC62F91D225BD000686DC9 /* LaunchScreen.storyboard */,
 				C0EC62FC1D225BD000686DC9 /* Info.plist */,
 				C0EC62EB1D225BD000686DC9 /* Supporting Files */,
+				C0EC63061D225C1C00686DC9 /* ScratchView.h */,
+				C0EC63071D225C1C00686DC9 /* ScratchView.m */,
 			);
 			path = ScratchCard;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				C0EC62F31D225BD000686DC9 /* ViewController.m in Sources */,
 				C0EC62F01D225BD000686DC9 /* AppDelegate.m in Sources */,
 				C0EC62ED1D225BD000686DC9 /* main.m in Sources */,
+				C0EC63081D225C1C00686DC9 /* ScratchView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
