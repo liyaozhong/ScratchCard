@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scratch_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-yc-xba">
+                                <rect key="frame" x="140" y="210" width="320" height="180"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0N-Fl-5Hb" customClass="ScratchView">
+                                <rect key="frame" x="140" y="210" width="320" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很遗憾，没有中奖！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iQ-Uy-mCo">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="jwz-of-srF"/>
+                                            <constraint firstAttribute="height" constant="180" id="mDH-6Y-5FF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="6gh-LW-Qvl"/>
+                                    <constraint firstItem="5iQ-Uy-mCo" firstAttribute="centerY" secondItem="u0N-Fl-5Hb" secondAttribute="centerY" id="hqP-KG-WsG"/>
+                                    <constraint firstItem="5iQ-Uy-mCo" firstAttribute="centerX" secondItem="u0N-Fl-5Hb" secondAttribute="centerX" id="qzb-IQ-dQf"/>
+                                    <constraint firstAttribute="width" constant="320" id="tJW-UY-SE1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scratchLineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gXf-yc-xba" firstAttribute="bottom" secondItem="u0N-Fl-5Hb" secondAttribute="bottom" id="6EQ-VF-30C"/>
+                            <constraint firstItem="u0N-Fl-5Hb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Axu-B7-OHk"/>
+                            <constraint firstItem="gXf-yc-xba" firstAttribute="trailing" secondItem="u0N-Fl-5Hb" secondAttribute="trailing" id="QZm-I9-qb9"/>
+                            <constraint firstItem="gXf-yc-xba" firstAttribute="leading" secondItem="u0N-Fl-5Hb" secondAttribute="leading" id="WDf-1o-qnl"/>
+                            <constraint firstItem="gXf-yc-xba" firstAttribute="top" secondItem="u0N-Fl-5Hb" secondAttribute="top" id="cUh-eH-4CM"/>
+                            <constraint firstItem="u0N-Fl-5Hb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sIs-ic-ZCm"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="scratch_bg.png" width="320" height="180"/>
+    </resources>
 </document>
