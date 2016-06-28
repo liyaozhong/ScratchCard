@@ -20,7 +20,7 @@
 - (void) awakeFromNib
 {
     [super awakeFromNib];
-    self.layer.mask = [[CAShapeLayer alloc] initWithLayer:self.layer];
+    self.layer.mask = [CALayer new];
 }
 
 - (void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
