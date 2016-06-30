@@ -74,7 +74,13 @@
 
 CGFloat angleBetweenPoints(CGPoint first, CGPoint second) {
     CGFloat height = second.y - first.y;
+    if(height == 0){
+        return 0;
+    }
     CGFloat width = first.x - second.x;
+    if(width == 0){
+        return M_PI_2;
+    }
     CGFloat rads = atan(height/width);
     return -rads;
 }
